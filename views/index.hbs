@@ -1,2 +1,54 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+<hr>
+<h2>Sign up for out newsletter</h2>
+
+<form class="form-hozizontal" role="form" action="/process" method="POST">
+	<input type="hidden" name=_csrf" value="{{csrf}}">
+	<div class="form-group">
+		<label for="fieldName" class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="fieldName" name="name">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="fieldEmail" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-4">
+			<input type="email" class=form-control" required id="field" name="email">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-4">
+			<button type="submit" class="btn btn-default">Register</button>
+		</div>
+	</div>
+</form>
+
+<div style="width:100%; height:30px;"></div>
+
+<form class="form-horizontal" role="form" enctype="multipart/form-data" method="POST" action="/contest/vacation-photo">
+	<div class="form-group">
+		<label for=fieldName" class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="fieldName" name="name">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="fieldEmail" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-4">
+			<input type="email" class="form-control required id="fieldName" name="email">Email</label>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="fieldPhoto" class="col-sm-2 control-label">Inspiring Photo</label>
+		<div class="col-sm-4">
+			<input type="file" class="form-control" required accept="image/*" id="fieldPhoto" name="photo">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-4">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</div>
+</form>
+			

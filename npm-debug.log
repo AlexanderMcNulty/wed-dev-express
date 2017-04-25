@@ -18,7 +18,7 @@
 9 verbose stack     at maybeClose (internal/child_process.js:827:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 10 verbose pkgid web@0.0.0
-11 verbose cwd /home/ammc/web/routes
+11 verbose cwd /home/ammc/web
 12 error Linux 3.13.0-85-generic
 13 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
 14 error node v4.4.3
